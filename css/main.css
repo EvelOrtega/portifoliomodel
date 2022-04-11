@@ -10,6 +10,9 @@ p,
 label {
   font-family: "Open Sans", sans-serif;
 }
+section {
+  overflow: hidden;
+}
 
 @keyframes fadeOut {
   to {
@@ -518,7 +521,6 @@ label {
   }
 
   .eo-home-presentation {
-    background-image: url("../images/foto-main.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     position: relative;
@@ -858,8 +860,12 @@ label {
   }
 
   .eo-avatar-sobre {
-    position: relative;
     height: 430px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    display: none;
   }
 
   .eo-box-img {
